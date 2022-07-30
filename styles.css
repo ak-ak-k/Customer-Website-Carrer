@@ -62,18 +62,7 @@ img {
 }
 
 .whole-img img {
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border: none; 
-  /* object-fit: cover;
-  object-position: 60% 17%;
-  width: 100%; */
-  height: 500px;
+  height: 80vh;
   object-fit: cover;
   object-position: right;
   max-width: 100%;
@@ -501,6 +490,9 @@ input::placeholder {
 @media screen and (min-width: 1024px) {
   .whole-img img {
     object-fit: contain;
+    height: 80vh;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
   }
 
   .future_comm {
@@ -518,19 +510,30 @@ input::placeholder {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .col_md {
     display: inline-block;
   }
   .future_comm {
-    width: 50vw;
-    height: 48vw;
+    width: 91vw;
+    height: auto;
     margin: 0 90px;
     padding: 30px;
+
+    margin: -14% auto;
   }
   .shape_comm {
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
     line-height: 40px;
     padding-bottom: 15px;
+  }
+  .section_do {
+    margin: 20% 0 0 0;
+    text-align: left;
+    padding: 0 5%;
+  }
+  .power_millions {
+    font-size: 1.8rem;
+    line-height: 40px;
   }
 }
